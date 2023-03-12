@@ -1,4 +1,5 @@
-<?xml version="1.0" standalone="no"?>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="2560.000000pt" height="1600.000000pt" viewBox="0 0 2560.000000 1600.000000"
- preserveAspectRatio="xMidYMid meet" onload="alert(document.cookie)">
+<svg xmlns="http://www.w3.org/2000/svg">
+<script>alert("XSS");</script>
+<rect x="0" height="100" width="100" style="fill: #cccccc"/>
+<line x1="20" y1="80" x2="80" y2="80" style="stroke: #ff0000; stroke-width: 5;"/>
+</svg>
