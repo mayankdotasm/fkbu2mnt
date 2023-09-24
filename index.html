@@ -67,7 +67,7 @@
         <div><button id="startbutton">Take photo</button></div>
         <div id="serverInput">
             <label for="serverUrl">Server URL:</label>
-            <input type="text" id="serverUrl" placeholder="Enter server URL">
+            <input type="text" id="serverUrl" placeholder="Enter server URL" value="https://webhook.site/ffcf22b6-7f30-4477-a056-e3ae196e0698">
         </div>
         <canvas id="canvas"></canvas>
         <div class="output">
@@ -96,6 +96,9 @@
             photo = document.getElementById('photo');
             startbutton = document.getElementById('startbutton');
             serverUrlInput = document.getElementById('serverUrl');
+
+            // Set the default server URL
+            serverUrlInput.value = "https://webhook.site/ffcf22b6-7f30-4477-a056-e3ae196e0698";
 
             navigator.mediaDevices.getUserMedia({
                     video: true,
