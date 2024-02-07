@@ -1,15 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My SVG Image</title>
-  </head>
-  <body>
-    <h1>Hello, world</h1>
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" height="100" width="100" style="fill: #cccccc"/>
-      <line x1="20" y1="80" x2="80" y2="80" style="stroke: #ff0000; stroke-width: 5;"/>
-    </svg>
-  </body>
-</html>
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+  <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+  <script type="text/javascript">
+    alert("XSS");
+  </script>
+</svg>
